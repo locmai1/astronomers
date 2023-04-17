@@ -32,104 +32,12 @@
   </style>
 </head>
 <body>
-  <!-- page container -->
-  <div class="bg-[#F5F5F5] min-w-screen min-h-screen flex flex-col">
-    <!-- navbar -->
-    <nav class="bg-[#F5F0EA] w-full h-[90px] shadow-xl fixed z-50">
-      <ul class="w-[900px] h-full m-auto flex flex-row list-none">
-        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
-          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Johannes Kepler</a>
-        </li>
-        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
-          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Christiaan Huygens</a>
-        </li>
-        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
-          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Hipparchus</a>
-        </li>
-        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
-          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Tycho Brahe</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- body -->
-    <div class="w-full h-full flex flex-row">
-      <!-- sidebar -->
-      <div class="w-[350px] h-screen bg-[#F5F0EA] shadow-xl top-0 left-0 z-10 flex">
-        <!-- profile -->
-        <div class="w-[250px] h-[450px] flex flex-col m-auto">
-          <!-- icon -->
-          <div class="w-[220px] h-[220px] flex m-auto rounded-full bg-[#F5F5F5] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
-            <img class="rounded-full opacity-75" src="/forgotten-astronomers/assets/kepler.jpeg" width="220" height="220" alt="kepler"/>
-          </div>
-          <!-- bio -->
-          <div class="w-[230px] h-[200px] flex flex-col m-auto">
-            <div class="w-[230px] h-[50px] flex flex-row m-auto gap-2">
-              <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Name</span>
-              <span class="flex my-auto">Johannes Kepler</span>
-            </div>
-            <div class="w-[230px] h-[50px] flex flex-row m-auto gap-2">
-              <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Country</span>
-              <span class="flex my-auto">United States</span>
-            </div>
-            <div class="w-[230px] h-[50px] flex flex-row m-auto gap-2">
-              <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Born</span>
-              <span class="flex my-auto">January 1, 2001</span>
-            </div>
-            <div class="w-[230px] h-[50px] flex flex-row m-auto gap-2">
-              <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Died</span>
-              <span class="flex my-auto">Junuary 1, 2001</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- section -->
-      <div class="w-full h-screen bg-[#F5F5F5] flex flex-col pt-[90px]">
-        <div class="w-full h-[280px] p-5 flex flex-col">
-          <!-- section title -->
-          <div class="text-[#515151] text-2xl font-bold">
-            Contributions:
-            <hr class="border border-[#515151] rounded-lg">
-          </div>
-          <!-- list -->
-          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="w-full h-[280px] p-5 flex flex-col">
-          <!-- section title -->
-          <div class="text-[#515151] text-2xl font-bold">
-            Why They Were Forgotten:
-            <hr class="border border-[#515151] rounded-lg">
-          </div>
-          <!-- list -->
-          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="w-full h-[280px] p-5 flex flex-col">
-          <!-- section title -->
-          <div class="text-[#515151] text-2xl font-bold">
-            Interested? Learn More:
-            <hr class="border border-[#515151] rounded-lg">
-          </div>
-          <!-- list -->
-          <ul class="list-inside list-disc pt-2 pl-1 text-[#515151]">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
+  <div class="min-w-screen min-h-screen flex">
+    <div class="w-[300px] h-[100px] flex flex-col m-auto gap-4">
+      <span class="flex m-auto font-bold text-2xl text-[#515151]">How Many Do You Know?</span>
+      <button class="w-[120px] h-[40px] flex m-auto bg-[#22555A] rounded-lg" onclick="window.location.href='kepler.html'">
+        <span class="text-lg text-[#F5F5F5] font-semibold flex m-auto">Click Here!</span>
+      </button>
     </div>
   </div>
 </body>
