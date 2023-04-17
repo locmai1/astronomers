@@ -12,12 +12,13 @@
       theme: {
         extend: {},
         fontFamily: {
-          'body': ['"Public Sans"', ...],
+          'sans': ['"Public Sans"', 'sans-serif'],
         },
         colors: {
           'beige': '#F5F0EA',
           'grey': '#515151',
-          'green': '#22555A'
+          'green': '#22555A',
+          'cream': '#F5F5F5'
         }
       }
     }
@@ -31,8 +32,10 @@
   </style>
 </head>
 <body>
-  <div class="bg-[#F5F0EA] min-w-screen min-h-screen flex flex-col">
-    <nav class="bg-[#F5F0EA] w-full h-[80px] shadow-xl">
+  <!-- page container -->
+  <div class="bg-[#F5F5F5] min-w-screen min-h-screen flex flex-col">
+    <!-- navbar -->
+    <nav class="bg-[#F5F0EA] w-full h-[90px] shadow-xl fixed z-50">
       <ul class="w-[900px] h-full m-auto flex flex-row list-none">
         <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
           <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Johannes Kepler</a>
@@ -48,6 +51,36 @@
         </li>
       </ul>
     </nav>
+    <!-- sidebar -->
+    <div class="w-[300px] h-screen bg-[#F5F0EA] shadow-xl top-0 left-0 z-10 flex">
+      <!-- profile -->
+      <div class="w-[250px] h-[450px] flex flex-col m-auto">
+        <!-- icon -->
+        <div class="w-[180px] h-[180px] flex m-auto rounded-full bg-[#F5F5F5] shadow-xl">
+          <img src="" width="" height="" alt=""/>
+        </div>
+        <!-- bio -->
+        <div class="w-[250px] h-[200px] flex flex-col m-auto">
+          <div class="w-[250px] h-[50px] flex flex-row m-auto gap-4">
+            <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Name</span>
+            <span class="flex my-auto">Johannes Kepler</span>
+          </div>
+          <div class="w-[250px] h-[50px] flex flex-row m-auto gap-4">
+            <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Country</span>
+            <span class="flex my-auto">United States</span>
+          </div>
+          <div class="w-[250px] h-[50px] flex flex-row m-auto gap-4">
+            <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Born</span>
+            <span class="flex my-auto">January 1, 2001</span>
+          </div>
+          <div class="w-[250px] h-[50px] flex flex-row m-auto gap-4">
+            <span class="w-[90px] h-[40px] rounded-lg bg-[#22555A] my-auto text-[#F5F5F5] text-center align-middle justify-center leading-[40px] items-center font-semibold">Died</span>
+            <span class="flex my-auto">Junuary 1, 2001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body -->
   </div>
 </body>
 </html>
