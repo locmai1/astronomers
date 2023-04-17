@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgotten Astronomers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        fontFamily: {
+          'body': ['"Public Sans"', ...],
+        },
+        colors: {
+          'beige': '#F5F0EA',
+          'grey': '#515151',
+          'green': '#22555A'
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-[#F5F0EA] min-w-screen min-h-screen flex flex-col">
+    <nav class="bg-[#F5F0EA] w-full h-[80px] shadow-xl">
+      <ul class="w-[900px] h-full m-auto flex flex-row list-none">
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Johannes Kepler</a>
+        </li>
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Christiaan Huygens</a>
+        </li>
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Hipparchus</a>
+        </li>
+        <li class="w-[200px] h-[60px] flex m-auto bg-[#22555A] rounded-lg">
+          <a class="text-[#F5F0EA] font-semibold flex m-auto text-md text-center" href="#">Tycho Brahe</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
